@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="myspringmvc:war exploded">
-    <output-path>$PROJECT_DIR$/../myspringmvc/out/artifacts/myspringmvc_war_exploded</output-path>
-    <root id="archive" name="myspringmvc_war exploded.war">
+  <artifact type="exploded-war" name="myspringmvc:war exploded">
+    <output-path>$PROJECT_DIR$/../myspringmvc/target/myspringmvc</output-path>
+    <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="myspringmvc" />
@@ -23,7 +23,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../myspringmvc/target/myspringmvc/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="myspringmvc/web/Web" />
     </root>

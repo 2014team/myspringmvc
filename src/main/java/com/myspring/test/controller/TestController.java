@@ -1,9 +1,12 @@
 package com.myspring.test.controller;
 
+import com.myspring.test.utils.JsonResult;
+import com.sun.org.apache.xpath.internal.operations.String;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -13,7 +16,22 @@ import java.util.Map;
 public class TestController {
     @RequestMapping(value = "/admin")
     @ResponseBody
-    public String testSpring(){
-        return "My testSpring";
+    public java.lang.String testSpring(){
+        JsonResult result = new JsonResult();
+        result.success();
+        return result.toJsonStr();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
